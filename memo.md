@@ -46,6 +46,12 @@ PS C:\Users\saiki\Documents\GitHub\react_test> cd test
 PS C:\Users\saiki\Documents\GitHub\react_test\test> code .   // これでvscodeのワークスペースを開くことができる
 ```
 
+localhost:3000起動
+
+```shell
+npm start
+```
+
 ## AWS
 
 検索で「amp」を入力しAWS Amplifyを起動
@@ -222,8 +228,9 @@ Try "amplify add api" to create a backend API and then "amplify push" to deploy 
 
 ※ctrl + l でコマンドラインの現在の行を一番上にできる
 
+## ユーザー認証機能
 
-## 認証をつける
+@aws-amplify/ui-reactをインストール
 
 ```shell
 PS C:\Users\saiki\Documents\GitHub\react_test\test> npm i aws-amplify @aws-amplify/ui-react
@@ -254,6 +261,8 @@ found 1 high severity vulnerability
   run `npm audit fix` to fix them, or `npm audit` for details
 ```
 
+アプリケーションにユーザー認証の機能を追加 [Amplify SNS Workshop > MVPを作ろう！ > 認証機能](https://amplify-sns.workshop.aws/ja/30_mock/10_auth.html)
+
 ```shell
 PS C:\Users\saiki\Documents\GitHub\react_test\test> amplify add auth
 Using service: Cognito, provided by: awscloudformation
@@ -269,10 +278,6 @@ Using service: Cognito, provided by: awscloudformation
 ✅ Some next steps:
 "amplify push" will build all your local backend resources and provision it in the cloud      
 "amplify publish" will build all your local backend and frontend resources (if you have hosting category added) and provision it in the cloud
-```
-
-```shell
-
 ```
 
 C:\Users\saiki\Documents\GitHub\react_test\test\src\App.jsを編集
